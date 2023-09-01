@@ -8,7 +8,7 @@ REG NO : 212222230002
 ### AIM:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
 
-### Equipments Required:
+### Components Required:
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
 ## Theory:
@@ -49,12 +49,12 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
    - To compile the project, click on "Processing" > "Start Compilation" in the menu.
    - Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
 
-5. Analyze and Fix Errors:*
+5. Analyze and Fix Errors:
    - If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
    - Review and fix any issues in your code if necessary.
    - View the RTL diagram.
 
-6.*Verification:
+6.Verification:
    - Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
    - Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
    - Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
@@ -62,7 +62,7 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 ### Program:
 ```
 Developed by: ABINAYA S
-RegisterNumber:  212222230003
+RegisterNumber:  212222230002
 ```
 ## Half Adder:
 ```
