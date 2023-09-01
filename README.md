@@ -1,6 +1,10 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+```
+Name : ABINAYA S
+REG NO : 212222230002
+```
+## Implementation of Half Adder and Full Adder circuit
 
-# Implementation-of-Half-Adder-and-Full-Adder-circuit
+
 ### AIM:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
 
@@ -36,19 +40,46 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+```
+Developed by: ABINAYA S
+RegisterNumber:  212222230003
+```
+## Half Adder:
+module EX03(a,b,c,s);
+input a,b;
+output s,c;
+assign s=a^b;
+assign c=a&b;
+endmodule
+## Full Adder:
+module ex3(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=a^b^c;
+assign carry=((a&b)|(b&c)|(c&a));
+endmodule
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+### RTL Diagram:
+## Half Adder:
+![RTLVIEW3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/0e8afff2-ab8d-4302-8443-f3ade699b902)
+
+## Full Adder:
+![fullRtl3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/2b14603c-f445-4688-a435-46a606c05139)
+
+## Waveform:
+## Half Adder:
+![half wf3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/3050e0a3-3e19-4688-9ea9-371a37e6fe61)
+
+## Full Adder:
+![FULLWF3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/5fabee84-d3be-4097-b80c-ce2064a8cf25)
+ 
 
 
-### TRUTH TABLE 
+### TRUTH TABLE :
+## Half Adder:
+![half TT3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/19f9558e-c5a9-4aa1-acdc-abd46ded8764)
+
+## Full Adder:
+![FULLTT3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/255a5ea9-22ff-44b5-8889-5f79d24691fa)
 
 ### Result:
