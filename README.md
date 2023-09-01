@@ -2,7 +2,7 @@
 Name : ABINAYA S
 REG NO : 212222230002
 ```
-## Implementation of Half Adder and Full Adder circuit
+## Exp 03 Implementation of Half Adder and Full Adder circuit
 
 
 ### AIM:
@@ -11,7 +11,7 @@ To design a half adder and full adder circuit and verify its truth table in Quar
 ### Equipments Required:
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
-Theory
+## Theory:
 Adders are digital circuits that carry out addition of numbers.
 
 ### Half Adder
@@ -33,40 +33,69 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -02 FULL ADDER 
 
-### Procedure
+### Procedure :
+1. Create a New Project:
+   - Open Quartus and create a new project by selecting "File" > "New Project Wizard."
+   - Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
 
-Connect the supply (+5V) to the circuit
-Switch ON the main switch
-If the output is 1, then the led glows.
-### 
-Program:
+2. Create a New Design File:
+   - Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
+   - Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+
+3. Write the Combinational Logic Code:
+   - Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+     
+4. Compile the Project:
+   - To compile the project, click on "Processing" > "Start Compilation" in the menu.
+   - Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+
+5. Analyze and Fix Errors:*
+   - If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+   - Review and fix any issues in your code if necessary.
+   - View the RTL diagram.
+
+6.*Verification:
+   - Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+   - Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+   - Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
+
+### Program:
 ```
 Developed by: ABINAYA S
 RegisterNumber:  212222230003
 ```
 ## Half Adder:
+```
 module EX03(a,b,c,s);
 input a,b;
 output s,c;
 assign s=a^b;
 assign c=a&b;
 endmodule
+```
 ## Full Adder:
+```
 module ex3(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 assign sum=a^b^c;
 assign carry=((a&b)|(b&c)|(c&a));
 endmodule
-
+```
 ### RTL Diagram:
 ## Half Adder:
 ![RTLVIEW3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/0e8afff2-ab8d-4302-8443-f3ade699b902)
 
 ## Full Adder:
 ![fullRtl3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/2b14603c-f445-4688-a435-46a606c05139)
+### TRUTH TABLE :
+## Half Adder:
+![half TT3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/19f9558e-c5a9-4aa1-acdc-abd46ded8764)
 
-## Waveform:
+## Full Adder:
+![FULLTT3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/255a5ea9-22ff-44b5-8889-5f79d24691fa)
+
+## Output Waveform:
 ## Half Adder:
 ![half wf3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/3050e0a3-3e19-4688-9ea9-371a37e6fe61)
 
@@ -75,11 +104,5 @@ endmodule
  
 
 
-### TRUTH TABLE :
-## Half Adder:
-![half TT3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/19f9558e-c5a9-4aa1-acdc-abd46ded8764)
-
-## Full Adder:
-![FULLTT3](https://github.com/abinayasangeetha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393675/255a5ea9-22ff-44b5-8889-5f79d24691fa)
-
 ### Result:
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
